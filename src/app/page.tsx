@@ -1,9 +1,9 @@
 'use client'
 import Image from "next/image";
-import { useRouter } from "next/navigation"
+import Link from 'next/link'
 
 export default function Home() {
-  const router = useRouter()
+
   return (
     <div className="landing-page">
        <audio autoPlay loop>
@@ -25,7 +25,8 @@ export default function Home() {
     <br/>
     <br/>
     <br/>
-    <button className="surprise-button"  onClick={() => router.push('/homee')}>¿Te atreves?</button>
+    <Link href={"/homee"}>    <button className="surprise-button"  >¿Te atreves?</button></Link>
+
 </div>
   );
 }

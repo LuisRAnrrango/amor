@@ -1,10 +1,7 @@
 'use client'
-
-import { useRouter } from 'next/navigation'
-
+import Link from 'next/link'
 
 export default function page() {
-   const router = useRouter()
 
 
 return (
@@ -28,8 +25,9 @@ return (
    
     <h1 className="text-white text-4xl font-bold mb-8">Feliz día de San Valentín, Esposa</h1>
     {/* Inserta los corazones flotantes aquí */}
-    <button className="surprise-button"  onClick={() => router.push('/carta')}>¿Quieres recibir tu sorpresa?</button>
-
+    <Link href={"/carta"}>
+    <button className="surprise-button"  >¿Quieres recibir tu sorpresa?</button>
+    </Link>
   </div>
 )
 }
