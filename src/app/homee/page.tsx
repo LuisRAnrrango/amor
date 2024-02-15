@@ -12,6 +12,7 @@ return (
     <img src="/rosa-removebg-preview.png" alt="Rosa hermosa" className="rose"></img>
  <audio autoPlay loop>
         <source src="/primeracita.mp3" type="audio/mpeg" />
+        
         Your browser does not support the audio element.
       </audio>
    
