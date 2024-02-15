@@ -1,10 +1,10 @@
 'use client'
-import { useEffect } from "react"
-import { useRouter } from "next/navigation"
+
+import { useRouter } from 'next/navigation'
 
 
 export default function page() {
-  const router= useRouter()
+   const router = useRouter()
 
 
 return (
@@ -12,7 +12,6 @@ return (
     <img src="/rosa-removebg-preview.png" alt="Rosa hermosa" className="rose"></img>
  <audio autoPlay loop>
         <source src="/primeracita.mp3" type="audio/mpeg" />
-        
         Your browser does not support the audio element.
       </audio>
    
